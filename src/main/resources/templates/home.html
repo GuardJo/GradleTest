@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webjar</title>
+    <script type="text/javascript" src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.js"/>
+    <script src="/webjars/bootstrap/4.3.1/css/bootstrap.min.js"></script>
+    <style>
+        div {
+            background-color : #bca;
+            width : 100px;
+            border : 1px solid green;
+        }
+    </style>
+</head>
+<body>
+
+<div id = "block">jquery</div>
+<button type="button" class="btn btn-primary" onclick="btnHandler()">effect</button>
+<script type="text/javascript">
+    function btnHandler() {
+        $('#block').animate({
+            width : "70%",
+            opacity : 0.4,
+            marginLeft : "0.6in",
+            fontSize : "3em",
+            borderWidth : "10px"
+        }, "15");
+    }
+</script>
+<button type="button" class="btn btn-primary" onclick="btnHandler2()">reset</button>
+<script type="text/javascript">
+    function btnHandler2() {
+        $('#block').animate({
+        width : "100px",
+        marginLeft : "0.1in",
+        fontSize : "10",
+        borderWidth : "1px"
+        }, "15");
+    }
+</script>
+</body>
+</html>
